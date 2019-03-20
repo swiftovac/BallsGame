@@ -226,6 +226,9 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         if boxCounter == 0 {
             ballCounter = 5
             winLabel.isHidden = false
+        }else if boxCounter > 0 && ballCounter == 0 {
+            winLabel.isHidden = false
+            winLabel.text = "YOU LOSE!!!"
         }
     }
     
